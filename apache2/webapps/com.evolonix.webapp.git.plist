@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<dict>
+    <key>includeFiles</key>
+    <array>
+    	<!-- Include files are activated in virtual host when webapp is started -->
+        <!-- Lion -->
+        <string>/etc/apache2/httpd_git.conf</string>
+        <!-- Mountain Lion -->
+	    <!-- <string>/Library/Server/Web/Config/apache2/httpd_git.conf</string> -->
+    </array>
+    <key>launchKeys</key>
+    <array>
+    	<!-- Launchd plists in /Library/LaunchDaemons are loaded when webapp is started -->
+        <string>com.evolonix.launchdaemon.git</string>
+    </array>
+    <key>name</key>
+    <string>com.evolonix.webapp.git</string>
+    <key>displayName</key>
+    <!-- Name shown in Server app -->
+    <string>Git</string>
+    <key>installationIndicatorFilePath</key>
+    <!-- The presence of this file indicates web app is installed -->
+    <string>/usr/bin/git</string>
+	<key>sslPolicy</key>
+	<!-- Determines webapp SSL behavior -->
+	<!-- 0: default, UseSSLWhenEnabled -->
+    <!-- 1: UseSSLAlways -->
+    <!-- 2: UseSSLOnlyWhenCertificateIsTrustable -->
+    <!-- 3: UseSSLNever -->
+    <!-- 4: UseSSLAndNonSSL -->
+    <integer>0</integer>
+</dict>
+</plist>

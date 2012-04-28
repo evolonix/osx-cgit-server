@@ -1,0 +1,61 @@
+# Enable caching of up to 1000 output entries
+cache-size=1000
+
+# Specify some default clone prefixes
+clone-prefix=git://server.example.com ssh://server.example.com/Users/git https://server.example.com/git
+
+# Specify the css url
+css=/cgit/cgit.css
+
+# Show extra links for each repository on the index page
+enable-index-links=1
+
+# Enable ASCII art commit history graph on the log pages
+enable-commit-graph=1
+
+# Show number of affected files per commit on the log pages
+enable-log-filecount=1
+
+# Show number of added/removed lines per commit on the log pages
+enable-log-linecount=1
+
+# Add a cgit favicon
+favicon=/favicon.ico
+
+# Use a custom logo
+logo=/cgit/cgit.png
+
+# Enable statistics per week, month and quarter
+max-stats=quarter
+
+# Set the title and heading of the repository index page
+root-title=Git repository browser
+
+# Set a subheading for the repository index page
+root-desc=a fast webinterface for the git dscm
+
+# Include some more info about example.com on the index page
+root-readme=/Library/Server/Web/Data/Sites/cgit/about.html
+
+# Allow download of tar.gz, tar.bz2 and zip-files
+snapshots=tar.gz tar.bz2 zip
+
+head-include=/Library/Server/Web/Data/Sites/cgit/head.html
+
+footer=/Library/Server/Web/Data/Sites/cgit/footer.html
+
+remove-suffix=1
+
+scan-path=/Users/git
+
+##
+## List of common mimetypes
+##
+
+mimetype.gif=image/gif
+mimetype.html=text/html
+mimetype.jpg=image/jpeg
+mimetype.jpeg=image/jpeg
+mimetype.pdf=application/pdf
+mimetype.png=image/png
+mimetype.svg=image/svg+xml

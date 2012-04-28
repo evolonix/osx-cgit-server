@@ -1,0 +1,36 @@
+a.btn-clone-in-mac {
+	position: relative;
+	display: inline-block;
+	height: 21px;
+	font-family: Helvetica,arial,freesans,clean,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 1px 1px 0 #fff;
+	white-space: nowrap;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	background: #f4f4f4;
+	background: -moz-linear-gradient(#f4f4f4, #ececec);
+	background: -webkit-linear-gradient(#f4f4f4, #ececec);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4',endColorstr='#ececec')";
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	margin-top: 10px;
+}
+
+a.btn-clone-in-mac > span {
+	display: block;
+	height: 21px;
+	padding: 0 9px 0 7px;
+	line-height: 21px;
+}
+
+a.btn-clone-in-mac:hover {
+	text-decoration: none !important;
+	color: #fff !important;
+	text-shadow: 1px 1px 0 #333 !important;
+	background: #4183c4 !important;
+}
